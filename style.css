@@ -1,0 +1,392 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-image: url(img/bluer.gif);
+  background-size: cover;
+  margin: 0;
+  justify-content: center;
+  padding: 0;
+  overflow-x: hidden;
+}
+/* ==header== */
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.about {
+  padding: 10px;
+  text-align: center;
+}
+
+.about-header {
+  align-items: center; /* sejajarkan vertikal */
+  justify-content: center; /* sejajarkan horizontal */
+  gap: 20px; /* jarak antara logo & teks */
+}
+
+header {
+  background: #f4847c;
+  color: rgb(249, 246, 246);
+  padding: 15px;
+  text-align: center;
+}
+/* ==header end== */
+
+/* ==navbar== */
+nav {
+  padding: 10px;
+  text-align: center;
+}
+.nav-img {
+  width: 100px; /* atur ukuran logo */
+  height: auto;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+/* ==navbar end== */
+
+/* ==content contact.html== */
+.box-container {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.box {
+  text-align: center;
+  width: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 30px;
+}
+.card-img {
+  width: 50%;
+  height: auto;
+}
+
+.card-content a {
+  justify-content: center; /* biar rata tengah */
+  gap: 50px; /* jarak antar icon */
+}
+
+.card-content h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.card-content p {
+  color: rgb(255, 253, 253);
+  font-size: 15px;
+  line-height: 1;
+}
+
+/* ==content contact.html end== */
+
+/* ==content about.html== */
+
+h3 {
+  color: white;
+}
+
+i {
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+.box h3 {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.artikel-box {
+  border: 3px solid #333; /* garis tebal warna abu tua */
+  border-radius: 12px; /* sudut membulat */
+  padding: 20px; /* jarak isi dengan border */
+  margin: 20px auto; /* spasi luar */
+  max-width: 900px; /* biar tidak melebar full */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* bayangan */
+  text-align: center; /* rata tengah isi */
+}
+
+.main-artikel {
+  padding: 20px;
+}
+
+.artikel-box img {
+  margin: 15px 0;
+  border: 2px solid #666;
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+/* ==content about.html end== */
+
+button {
+  background: #27ae60;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* content */
+
+/* content end */
+
+/* form */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.main-container {
+  display: flex;
+  justify-content: center; /* center horizontal */
+  align-items: center; /* center vertical */
+  min-height: calc(
+    100vh - 120px
+  ); /* tinggi layar dikurangi tinggi navbar/header */
+}
+
+.form-container {
+  padding-top: 10px;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 50%;
+  margin-top: 10px;
+}
+
+.form-container h3 {
+  text-align: center;
+  color: #faf7f7;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+form input,
+form select,
+form textarea,
+form button {
+    width: 100%;        /* semua elemen selebar container */
+    box-sizing: border-box; /* biar padding tidak bikin melebar */
+    margin-bottom: 15px; /* kasih jarak antar field */
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #ffffff;
+  color: #101010;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background: #6e8eff;
+}
+
+/* form end */
+
+footer {
+  text-align: center;
+  padding: 23px 0;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 0;
+  color: #2076d8;
+}
+/* ========== RESPONSIVE FIX ========== */
+
+/* Semua gambar biar fleksibel */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Grid responsive */
+@media (max-width: 1024px) {
+  .box-container {
+    grid-template-columns: repeat(2, 1fr); /* Tablet: 2 kolom */
+  }
+}
+
+@media (max-width: 768px) {
+  .box-container {
+    grid-template-columns: 1fr; /* HP: 1 kolom */
+    gap: 15px;
+  }
+
+  .box {
+    width: 100%; /* full lebar kontainer */
+    max-width: 400px; /* batas maksimal */
+    margin: 0 auto 20px; /* tengah + jarak bawah */
+  }
+
+  .form-container {
+    max-width: 100%;
+    width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .nav-img {
+    width: 70px; /* logo lebih kecil di HP */
+  }
+}
+
+@media (max-width: 480px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  button,
+  .btn-submit {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .form-container {
+    padding: 15px;
+  }
+}
+
+img {
+  display: block;
+  margin: 0 auto; /* bikin gambar rata tengah */
+  max-width: 100%; /* biar tidak melebihi layar */
+  height: auto;
+}
+
+/* Supaya semua gambar di dalam artikel/box benar2 ketengah */
+.artikel-box img,
+.box img {
+  display: block;
+  margin: 0 auto; /* bikin rata tengah */
+  max-width: 100%; /* biar tidak melewati layar */
+  height: auto;
+}
+
+/* Kalau parent pakai flex */
+.artikel-box,
+.box {
+  display: flex;
+  flex-direction: column; /* urutan tetap atas ke bawah */
+  align-items: center; /* konten termasuk gambar ke tengah */
+  text-align: center; /* teks ikut rata tengah */
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* kiri–kanan */
+  align-items: center; /* rata tengah vertikal */
+  padding: 10px 20px;
+  background: url("background.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/* Logo di kiri */
+header .logo img {
+  max-height: 60px;
+}
+
+/* Menu di tengah */
+header nav {
+  flex: 1; /* biar ambil ruang tengah */
+  text-align: center;
+}
+
+header nav a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Text kanan */
+header .tagline {
+  color: #fff;
+  font-weight: bold;
+  white-space: nowrap;
+}
